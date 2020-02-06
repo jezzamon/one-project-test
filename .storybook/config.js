@@ -20,7 +20,7 @@ addParameters({
 addDecorator(withInfo);
 addDecorator(withKnobs);
 setAddon(JSXAddon);
-const req = require.context('../src/', true, /.stories.js$/);
+const req = require.context('../src/', true, /.stories.js|mdx$/);
 
 function loadStories() {
   require('./welcomeStory');
